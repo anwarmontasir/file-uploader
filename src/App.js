@@ -1,10 +1,14 @@
 import React from 'react';
+import './App.css';
+import SearchBar from './SearchBar/SearchBar';
+import FilterableList from './FilterableList/FilterableList';
 
 function App() {
   return (
-    <main className='App'>
-      {/* content goes here */}
-    </main>
+    <div className='App'>
+      <SearchBar />
+      <FilterableList files={this.props.files} />
+    </div>
   );
 }
 
