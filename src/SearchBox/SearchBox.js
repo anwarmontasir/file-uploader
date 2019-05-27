@@ -7,8 +7,8 @@ class SearchBox extends Component {
     render() {
         return (
             <div className="SearchBox">
-                <FontAwesomeIcon icon={faSearch} />
                 <input placeholder="Search term" />
+                <FontAwesomeIcon icon={faSearch} />
             </div>
         )
     }
