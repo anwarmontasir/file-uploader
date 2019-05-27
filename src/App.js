@@ -24,8 +24,8 @@ class App extends React.Component {
   render() {
     return (
       <div className='App'>
-        <SearchBar searchTerm={this.state.searchTerm} filterOption={this.state.filterOptions} />
-        <FilterableList files={this.props.files} searchTerm={this.state.searchTerm} filterOption={this.state.filterOptions} />
+        <SearchBar searchTerm={this.state.searchTerm} filterOption={this.state.filterOptions} handleUpdate={term=>this.updateSearchTerm(term)} handleFilterChange={option => this.updateFilterOption(option)} />
+        <FilterableList files={this.props.files} searchTerm={this.state.searchTerm} filterOption={this.state.filterOption} />
       </div>
     );
   }

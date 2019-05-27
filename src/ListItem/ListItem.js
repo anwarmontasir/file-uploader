@@ -26,10 +26,10 @@ class ListItem extends Component {
                 <div className="ListItem__content">
                     <div className="ListItem__heading">
                         <div className="ListItem__title">
-                            this.props.name
+                            {this.props.name}
                         </div>
                         <div className="ListItem__size">
-                            this.props.size
+                            {this.props.size}
                         </div>
                     </div>
                     <div className="ListItem__actions">
